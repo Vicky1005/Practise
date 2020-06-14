@@ -1,0 +1,17 @@
+Посмотреть с каким origin bp ubnf vs hf,jnftv 
+git remote -v
+
+Удаляем текущий
+git remote remove origin
+
+Проверяем что его больше нет
+git remote -v
+
+Добавляем новый
+git remote add origin git@github...
+
+Проверяем что он есть
+git remote -v
+
+Пушим
+git push

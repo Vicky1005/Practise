@@ -1,0 +1,54 @@
+Final может применяться к полям, методам и к самим классам.
+Переназначение final поля в любой части кода приводит к ошибке.
+Final означает финальность ссылки.
+но можно делать так:
+final StringBuilder builder = new StringBuilder();
+builder.apend("hello");
+
+от класса final нельзя унаследоваться.
+
+final методы
+нельзя переопределить
+
+final поле должно быть присвоено значение до окончания инициализации объекта:
+проинициализировавшись один раз поле уже не может быть изменено
+
+public class Point2D {
+final int MAXRANGE;
+private int x;
+private int y;
+
+public Point2D () {
+MAXRANGE = 35;
+}
+
+public Point2D(int x, int y) {
+this.x=x;
+this.y=y;
+MAXRANGE = 50;
+
+}
+}
+
+Проинициализировать можно также в логическом блоке, который вызывается перед вызовом конструктора
+
+public class Point2D {
+final int MAXRANGE;
+private int x;
+private int y;
+
+{
+MAXRANGE = 35;
+}
+
+public Point2D () {
+
+}
+
+public Point2D(int x, int y) {
+this.x=x;
+this.y=y;
+
+
+}
+}

@@ -1,0 +1,17 @@
+Установить GIT
+1. Выбрать GIT bash
+2. Ввести ssh-keygen  -t rsa -C "емейл"
+//Гит спрашивает куда поместить ключи и по умолчанию предлагает C..
+3. enter
+4. Git запрашивает ввести пароль для пулов, комитов
+5. Ввести пароль и enter
+6. ключи сгенерировались: id_rsa - private, id_rsa.pub - public
+!public key можно шарить, private - нельзя
+7. Загрузить ключи в систему
+Мой профиль-settings-SSH and GPG Keys-вставить public key
+//возвращаемся в GIT BAsh
+8. git config --glbal user.name - сгенерировать имя
+9. git config --glbal user.email - сгенерировать почту
+
+
+

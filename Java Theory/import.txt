@@ -1,0 +1,12 @@
+import необходим для получения доступа к public классам, итерфейсам из других пакетов.
+* не сипользовать!
+
+import static
+
+import static java.lang.Math*;
+import static java.lang.System.out;
+
+double result = Math.cos(2 * Math.PI)+Math.sin(3 * Math.PI);   //было
+double result = cos(2 * PI)+sin(3 * PI);   //стало
+out.println("");
+
